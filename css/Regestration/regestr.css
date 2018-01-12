@@ -1,0 +1,41 @@
+.Regestration__footer
+{
+	font-size: 34px;
+	font-family: 'Cormorant Garamond', serif;
+	margin-bottom: 28px;
+}
+.Regestration__button
+{
+	
+	display: flex;
+	justify-content: center;
+}
+.-btn
+{
+	width: 420px;
+	height: 73px;
+	background-image: url(button_grad.png);
+	position: inside;
+	border:none;
+	margin-bottom: 103px;
+}
+.Regestration__text_button
+{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	color: White;
+	
+}
+.Regestration__line
+{
+	opacity: 77%;
+	background: #E0e0e0;
+}
+.Regestration__copy_rait
+{
+	font-weight: 400;
+	font-size: 14px;
+	color: #8c8c8c8c;
+	font-family: 'Roboto', sans-serif;
+}

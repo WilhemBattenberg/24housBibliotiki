@@ -1,0 +1,43 @@
+.-nav
+{
+	color: #666666;
+}
+.owl-dots
+{
+	visibility: hidden;
+}
+.owl-carousel
+{
+	margin-right: 40px;
+	    margin-left: 30px;
+
+}
+.item
+{
+	width: 85%;
+}
+.owl-next
+{
+	float: right;
+	background: White!important;
+	color: Yellow !important;
+	font-size: 60px !important;
+	margin-right: -30px;
+}
+.owl-prev
+{
+	float: left;
+	background: White!important;
+	color: Yellow !important;
+}
+.owl-nav
+{
+	    margin-right: 15px;
+    margin-left: -50px;
+    margin-top: -900px !important;
+
+}
+.owl-stage-outer
+{
+	margin-right: 50px;
+}

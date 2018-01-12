@@ -1,0 +1,35 @@
+@import "_collapce/collapce.css";
+@import "__link/link.css";
+@import "__addr/addr.css";
+@import "__logo/logo.css";
+.-White
+{
+	background: White;
+}
+.-right_t
+{
+float: right;
+}
+.header
+{
+	
+	margin-right: 130px;
+}
+.menu_primary__nav
+{
+	background: White;
+}
+.navigation
+{
+	background: #f8f8fa;
+}
+.-color_navi
+{
+ color:#0094d6;
+ font-family: 'Roboto', sans-serif;
+}
+.st
+{
+	margin-left: 4px;
+	font-size: 14px;
+}

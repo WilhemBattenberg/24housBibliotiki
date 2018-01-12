@@ -1,0 +1,14 @@
+@import "navigation/navigation.css";
+@import "News/news.css";
+@import "Book/set.css";
+@import "Regestration/regestr.css";
+@import "Reviews/Revievers.css";
+@import "Promo/promo.css";
+.-center
+{
+	text-align: center;
+}
+.-col
+{
+	background: #f8f8fa;
+}
