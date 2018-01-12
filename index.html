@@ -299,17 +299,73 @@
 <!--NEWS-->
  <div class="container news">
  	<h1 class="news__header">НОВОСТИ</h1>
- 	<div class="news__block">
- 		<div class="flag">
- 		<img src="image/news/flag.png" alt="flag">
+ 	
+	<div class="owl-carousel owl-theme">
+ 		<div class="item">
+ 			<div class="news__block">
+ 				<div class="flag">
+ 				<img src="image/news/flag.png" alt="flag">
+ 				</div>
+			
+ 				<img src="image/news/1.png" alt="image">
+ 				<div class="news__text">
+ 					<h1 class="news__menu__header">Lorem Ipsum</h1>
+ 					<p class="news__menu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua.</p>
+ 				</div>
+ 			</div>
  		</div>
-	
- 		<img src="image/news/1.png" alt="image">
- 		<div class="news__text">
- 			<h1>Lorem Ipsum</h1>
- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua.</p>
+		
+		<div class="item">
+ 			<div class="news__block">
+ 				<div class="flag">
+ 				<img src="image/news/flag.png" alt="flag">
+ 				</div>
+			
+ 				<img src="image/news/2.png" alt="image">
+ 				<div class="news__text">
+ 					<h1 class="news__menu__header">Lorem Ipsum</h1>
+ 					<p class="news__menu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua.</p>
+ 				</div>
+ 			</div>
  		</div>
- 	</div>
+
+		<div class="item">
+ 			<div class="news__block">
+ 				<div class="flag">
+ 				<img src="image/news/flag.png" alt="flag">
+ 				</div>
+			
+ 				<img src="image/news/3.png" alt="image">
+ 				<div class="news__text">
+ 					<h1 class="news__menu__header">Lorem Ipsum</h1>
+ 					<p class="news__menu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua.</p>
+ 				</div>
+ 			</div>
+ 		</div>
+	</div>
+	<script type="text/javascript">
+				$('.owl-carousel').owlCarousel({
+   				 loop:true,
+   				 margin:10,
+   				 responsiveClass:true,
+                 navText: ["&lArr;", "&gt; "],
+   				 responsive:{
+   				     0:{
+   				         items:1,
+   				         nav:true
+   				     },
+   				     600:{
+   				         items:2,
+   				         nav:false
+   				     },
+   				     1000:{
+   				         items:3,
+   				         nav:true,
+   				         loop:false
+   				     }
+   				 }
+				})
+			</script>
  </div>
 
 
