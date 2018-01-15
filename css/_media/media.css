@@ -1,0 +1,123 @@
+@media (max-width: 1190px) and (min-width: 998px) {
+	.promo__left
+	{
+		visibility: hidden;
+	}
+	.promo__right
+	{
+		    width: 100%;
+    	margin-top: -465px;
+	}
+}
+@media (max-width: 1200px)
+{
+	.news .owl-nav
+	{
+		margin: 0px;
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 50px;
+		width: 309px;
+	}
+	.news	.owl-stage-outer
+	{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 1055px)
+{
+	.new-books .owl-nav
+	{
+		visibility: hidden;
+	
+	}
+	.new-books .owl-stage-outer
+	{
+		margin-right: 0;
+	}
+}
+@media (max-width: 911px)
+{
+	.promo__overlay
+	{
+		margin: 0 auto;
+	}
+}
+@media (max-width: 746px)
+{
+	.dra
+	{ margin-left: 20px;
+		display:inline; 
+		width: 300px;
+		padding: 0px;
+	}
+	.news .owl-carousel {
+width: 100%;
+		}
+}
+@media (max-width: 546px) {
+	.Reviews__mobile .reviews__book-img
+{
+	width: 200px!important;
+}
+.Reviews__mobile 
+{
+	height: 600px;
+}
+.reviews__image .reviews__book-img
+{
+	width: 120px!important;
+}
+.reviews__image
+{
+	margin-left: 0px;
+	padding-right: 0px;
+}
+}
+@media (max-width: 450px) {
+		.Reviews__mobile .reviews__book-img
+{
+	width: 200px!important;
+	padding-left: 10px;
+}
+.bop
+{
+	display: block;
+}
+.reviews__image
+{
+	align-items: center;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+.Reviews__mobile
+{
+	height: 800px;
+}
+.reviews__image
+{
+	padding-bottom: 20px;
+}
+}
+@media (max-width: 760px) {
+	
+	.promo__right
+	{
+	padding: 0px;
+	margin: 0 auto;
+		}
+	.promo__description
+	{
+		padding: 10px;
+	}
+	.promo__button 
+	{
+		margin: 7px;
+	}
+	.promo__title
+	{
+		text-align: center;
+	}
+}

@@ -4,6 +4,7 @@
 @import "Regestration/regestr.css";
 @import "Reviews/Revievers.css";
 @import "Promo/promo.css";
+@import "_media/media.css";
 .-center
 {
 	text-align: center;
@@ -11,4 +12,31 @@
 .-col
 {
 	background: #f8f8fa;
+}
+.container__title
+{
+	/* Style for "Новости" */
+width: 100px;
+height: 14px;
+color: #000000;
+font-family: "Cormorant Garamond - Semi Bold";
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+text-transform: uppercase;
+text-align: center;
+margin-left: 40px;
+}
+.news__background-text
+{
+width: 106px;
+height: 110px;
+color: #d9eafb;
+font-family: 'Cormorant', serif;
+font-size: 350px;
+font-weight: 400;
+top: -70px;
+text-align: left;
+margin-left: -50px;
+text-transform: uppercase;
 }

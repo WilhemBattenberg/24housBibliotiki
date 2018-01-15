@@ -1,3 +1,4 @@
+@import "mobile/mobile.css";
 .reviews__description {
   margin-top: 20px;
   padding-left: 45px;
@@ -66,4 +67,29 @@
 .container__title
 {
   margin-bottom: 15px;
+}
+.Revi__rel
+{
+  position: relative;
+}
+.Revi__rel .new__background-text
+{
+  left: 0;
+}
+._flex
+{
+  display: flex;justify-content: center;
+}
+.news__header
+{
+  margin-top: 40px;
+}
+.news__header .container__title
+{
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+.Regestration__footer 
+{
+  margin-top: 90px;
 }

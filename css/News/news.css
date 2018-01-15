@@ -1,41 +1,194 @@
-.news__header
+.news__description {
+  padding: 20px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  width: 214px;
+  height: 88px;
+}
+.news__background-text, .new__background-text, .reviews__background-text {
+  position: absolute;
+  font-size: 250px;
+  font-weight: 600;
+  color: #d9eafb;
+  z-index: -1;
+}
+.news__item {
+  width: 265px;
+  height: 440px;
+  transition: all 0.15s ease-out;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: -5px -4px 24px rgba(0, 0, 0, 0.17);
+  background: white;
+  z-index: 0;
+}
+.news__item:hover {
+  box-shadow: 4px -1px 20px rgba(0, 0, 0, 0.2);
+}
+
+.news__title {
+  margin-top: 35px;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.news__date {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  z-index: 1;
+  height: 85px;
+  width: 65px;
+  background-repeat: no-repeat;
+}
+.news__date span {
+  position: absolute;
+  font-weight: bold;
+}
+.news__date span:nth-child(2) {
+  font-size: 32px;
+  top: 0;
+  padding: 10px;
+  font-family: "Cormorant Garamond";
+  font-weight: 700;
+}
+.news__date span:nth-child(3) {
+  font-size: 20px;
+  top: 35px;
+  padding: 10px;
+  font-family: "Cormorant Garamond";
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.news__background-text {
+  left: 0;
+  top: -25px;
+}
+
+.news {
+  margin-top: 50px;
+}
+.news > .row {
+  position: relative;
+}
+.news > .row:nth-child(2) {
+  position: relative;
+}
+.news__slider {
+  position: initial;
+  padding: 0;
+}
+.news .item {
+  padding-top: 25px;
+}
+.news .owl-stage-outer {
+  position: initial;
+}
+.-flex
 {
-	font-size: 20px;
-	font-family: 'Cormorant Garamond - Semi Bold';
-	font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+.news .owl-carousel
+{
+  width: 70%;
+}
+.news .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    }
+.news__slider .owl-nav {
+    display: grid;
+    grid-template-columns: 65px 65px;
+    grid-template-rows: 65px 65px;
+    height: 100%;
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    width: 25%;
+    top: 0;
+    margin-left: -300px;
+  }
+.news .owl-next {
+  width: 65px;
+    height: 65px;
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    box-shadow: -5px -4px 15px
+   background: White!important;
+  }
+.owl-theme .owl-nav .disabled {
+    opacity: .5;
+    cursor: default;
+  }
+.owl-prev
+{
+      width: 65px;
+    height: 65px;
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    box-shadow: -5px -4px 15px;
+}
+.row
+{
+  margin: 0 auto;
+}
+.owl-prev
+{
+  background: White !important;
+}
+.owl-next
+{
+  background: White !important;
+}
+.news .owl-next::after {
+     display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    content: ">";
+    /* top: 50%; */
+    transform: translateY(-30%);
+    /* text-align: center!important; */
+    font-size: 40px;
+    color: Orange!important;
+  }
+.news .owl-prev::after
+{
+   display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    content: "<";
+    /* top: 50%; */
+    transform: translateY(-30%);
+    /* text-align: center!important; */
+    font-size: 40px;
+    color: Orange!important;
+}
+.new__background-text
+{
+  font-weight: 500!important;
+  font-family: 'Cormorant', serif !important;
 
 }
-.news
+.news .new__background-text
 {
-	padding-left: 0;
-}
-.flag
-{
-	position: relative;
-	left: 15px;
-    top: 80px;
-    width: 63px!important;
 
 }
-.news__text
+.-it
 {
-	background: White;
-	margin-top: -35px;
-}
-.news__menu__header
-{
-	font-size: 20px;
-	font-family: 'Cormorant Garamond';
-	font-weight: bold;
-	margin-top: 33px;
-}
-.news__menu__text
-{
-	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-}
-.news__block
-{
-	margin-top: -60px;
+    right: 0;
+  padding: 0;
+  margin-right: -20px!important;
 }

@@ -4,6 +4,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Cormorant:400,700|Roboto:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant:400,600&amp;subset=cyrillic" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,272 +18,124 @@
 	<title></title>
 </head>
 <body class="-col">
-	<div class="navigation">
-		<!-- HEADER PC/Ladtop-->
- 		<header class="container-fluid header" >
-	
- 		  <!-- LOGO  -->
- 		  <div class="row logo_naw">
- 		    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-3">
- 		      <div class="logo__image">
- 		        <img src="image/navigation/logo.png" width="100%">
- 		      </div>
- 		    </div>
-	
- 		    <div class="col-lg-5 col-md-9 col-sm-8 navbar__text -right">
- 		    </div>
- 		      <!-- MENU SEARCH  -->
- 		  <div class=" col-lg-6 -right">
- 		  	<div class="-right">
- 		  		<a href="#" class="menu_Versia">БИБЛИОТЕКАРЮ</a>
- 		  		<a href="#" class="menu_Versia">ВХОД</a>
- 		  		<img src="image/navigation/o.png" class="image_menu">
- 		  	</div>
- 		  </div>
- 		    <!-- /MENU SEARCH -->
- 		  </div>
- 		  <!-- /LOGO -->
-	
- 		  <!-- MENU  -->
- 		  <div class="row menu_primary">
- 		    <div class="col-lg-12  menu_primary__nav">
- 		      <div class="navbar-header">
- 		        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-wrapper">
- 		          <span class="sr-only">Развернуть</span>
- 		          <span class="icon-bar"></span>
- 		          <span class="icon-bar"></span>
- 		          <span class="icon-bar"></span>
- 		        </button>
- 		      </div>
- 		
- 		        <div class="collapse navbar-collapse" id="menu-wrapper -White">
-				
- 		          	<ul class="nav navbar-nav menu-primary">
- 		          	  <li class="nav__item nav_size_primary">
- 		          	    <a class="nav__link" href="#">О проекте</a>
- 		          	  </li>
- 		          	  <li class="nav__item nav_size_primary">
- 		          	    <a class="nav__link" href="#">Новости</a>
- 		          	  </li>
- 		          	  <li class="nav__item nav_size_primary">
- 		          	    <a class="nav__link" href="#">Бибилотеки</a>
- 		          	  </li>
- 		          	  <li class="nav__item nav_size_primary">
- 		          	    <a class="nav__link" href="#">Каталог</a>
- 		          	  </li>
- 		          	  <li class="nav__item_last nav_size_primary hidden-sm  hidden-lg">
- 		          	      <a class="nav__link" href="#">Форум</a>
- 		          	  </li>
- 		          	</ul>
- 		          	<div class="addr -right_t hidden-xs">
- 		          		<img src="image/navigation/point.png">
- 		          		<a href="#" class="-color_navi st">Санкт-Петербург</a>
- 		          	</div>
- 		          
- 		        </div>
- 		    </div>
- 		      <!-- /MENU -->
-	
- 		  </div>
+
+<!-- Mobile menu-->
+<nav class="navbar navbar-default hidden-sm hidden-md hidden-lg">
+  <div class="container-fluid menu_widt">
+    <!-- Заголовок -->
+    <div class="navbar-header ">
+      <!-- Кнопка «Гамбургер» -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+        <span class=sr-only>Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="#">
+        <img src="image/navigation/logo.png">
+      </a>
+    </div>
+    <!-- Основная часть меню -->
+    <div class="collapse navbar-collapse" id="navbar-main">
+    
+      <!-- Содержимое основной части -->
+      <ul class="nav navbar-nav">
+        <li><a href="#" class="nav__link">О проекте <span class="sr-only">(current)</span></a></li>
+        <li><a href="#" class="nav__link">Новости</a></li>
+        <li><a href="#" class="nav__link">Библиотеки</a></li>
+        <li><a href="#" class="nav__link">Каталог</a></li>
+        <li><a href="#" class="nav__link">Форум</a></li>
+        <!-- Выпадающий список -->
+        <li><a href="#" class="nav__link">Библиотекарю</a></li>
+        <li><a href="#" class="nav__link">Вход</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+
+<!--Desktop menu -->
+
+	<div class="navigation hidden-xs">
+
+ 		<header class=" header" >
+
+ 		 	 <div class="row logo_naw">
+ 		 	   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-3">
+ 		 	     <div class="logo__image">
+ 		 	       <img src="image/navigation/logo.png" class="logo__menu" width="100%">
+ 		 	     </div>
+ 		 	   </div>
+		
+ 		 	   <div class="col-lg-5 col-md-9 col-sm-8 navbar__text -right">
+ 		 	   </div>
+
+ 		 	 <div class=" col-lg-6 -right">
+ 		 	 	<div class="-right">
+ 		 	 		<a href="#" class="menu_Versia">БИБЛИОТЕКАРЮ</a>
+ 		 	 		<a href="#" class="menu_Versia">ВХОД</a>
+ 		 	 		<img src="image/navigation/o.png" class="image_menu">
+ 		 	 	</div>
+ 		 	 </div>
+
+ 		 	 </div>
+
+		
+
+ 		 	 <div class="row menu_primary">
+ 		 	   <div class="col-lg-12  menu_primary__nav">
+ 		 	     <div class="navbar-header">
+ 		 	       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-wrapper">
+ 		 	         <span class="sr-only">Развернуть</span>
+ 		 	         <span class="icon-bar"></span>
+ 		 	         <span class="icon-bar"></span>
+ 		 	         <span class="icon-bar"></span>
+ 		 	       </button>
+ 		 	     </div>
+ 			
+ 		 	       <div class="collapse navbar-collapse" id="menu-wrapper -White">
+					
+ 		 	         	<ul class="nav navbar-nav menu-primary">
+ 		 	         	  <li class="nav__item nav_size_primary">
+ 		 	         	    <a class="nav__link" href="#">О проекте</a>
+ 		 	         	  </li>
+ 		 	         	  <li class="nav__item nav_size_primary">
+ 		 	         	    <a class="nav__link" href="#">Новости</a>
+ 		 	         	  </li>
+ 		 	         	  <li class="nav__item nav_size_primary">
+ 		 	         	    <a class="nav__link" href="#">Бибилотеки</a>
+ 		 	         	  </li>
+ 		 	         	  <li class="nav__item nav_size_primary">
+ 		 	         	    <a class="nav__link" href="#">Каталог</a>
+ 		 	         	  </li>
+ 		 	         	  <li class="nav__item_last nav_size_primary hidden-sm  hidden-lg">
+ 		 	         	      <a class="nav__link" href="#">Форум</a>
+ 		 	         	  </li>
+ 		 	         	</ul>
+ 		 	         	<div class="addr -right_t hidden-xs">
+ 		 	         		<img src="image/navigation/point.png">
+ 		 	         		<a href="#" class="-color_navi st">Санкт-Петербург</a>
+ 		 	         	</div>
+ 		 	         
+ 		 	       </div>
+ 		 	   </div>
+
+		
+ 		 	 </div>
  		</header>
- 		<!-- /HEADER -->
+
 	</div>
 
- <!--
- 	</div>
-	<div class="container-fluid -nav">
-		<div class="Books">
-			<h1>Новые издания</h1>
-			<div class="owl-carousel owl-theme">
-				<div class="item">
-					<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-					</div>
-					<div class="Text">
-						<h1>LOREM</h1>
-						<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-					</div>
-					<div class="row">
-						<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-						</div>
-						<div class="Text">
-								<h1>LOREM</h1>
-								<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-						</div>	
-					</div>
-				</div>
-				<div class="item">
-					<div class="Books__block ">
-						<div class="Books__image">
-							<img src="image/Books/1.jpeg" width="150px">
-						</div>
-						<div class="Text">
-							<h1>LOREM</h1>
-							<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-						</div>
-						<div class="Text">
-								<h1>LOREM</h1>
-								<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-						</div>	
-					</div>
-				</div>
-				<div class="item">
-					<div class="Books__block">
-						<div class="Books__image">
-							<img src="image/Books/1.jpeg" width="150px">
-						</div>
-						<div class="Text">
-							<h1>LOREM</h1>
-							<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-						</div>
-						<div class="Text">
-								<h1>LOREM</h1>
-								<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-						</div>	
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-					</div>
-					<div class="Text">
-						<h1>LOREM</h1>
-						<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-					</div>
-					<div class="row">
-						<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-						</div>
-						<div class="Text">
-								<h1>LOREM</h1>
-								<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-						</div>	
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-					</div>
-					<div class="Text">
-						<h1>LOREM</h1>
-						<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-					</div>
-					<div class="row">
-						<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-						</div>
-						<div class="Text">
-								<h1>LOREM</h1>
-								<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-						</div>	
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-					</div>
-					<div class="Text">
-						<h1>LOREM</h1>
-						<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-					</div>
-					<div class="row">
-						<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-						</div>
-						<div class="Text">
-								<h1>LOREM</h1>
-								<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-						</div>	
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-					</div>
-					<div class="Text">
-						<h1>LOREM</h1>
-						<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-					</div>
-					<div class="row">
-						<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-						</div>
-						<div class="Text">
-								<h1>LOREM</h1>
-								<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-						</div>	
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-					</div>
-					<div class="Text">
-						<h1>LOREM</h1>
-						<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-					</div>
-					<div class="row">
-						<div class="Books__image">
-						<img src="image/Books/1.jpeg" width="150px">
-						</div>
-						<div class="Text">
-								<h1>LOREM</h1>
-								<h3>Rook ad kost ziet te. Vernieuwd er in vertoonen maleische. Kreeg om wilde al kinta massa geldt. Parijs echter hoogen are breede wij aan het.</h3>
-						</div>	
-					</div>
-				</div>
-			</div>
-
-			<script type="text/javascript">
-				$('.owl-carousel').owlCarousel({
-   				 loop:true,
-   				 margin:10,
-   				 responsiveClass:true,
-                 navText: ["&lArr;", "&gt; "],
-   				 responsive:{
-   				     0:{
-   				         items:1,
-   				         nav:true
-   				     },
-   				     600:{
-   				         items:3,
-   				         nav:false
-   				     },
-   				     1000:{
-   				         items:4,
-   				         nav:true,
-   				         loop:false
-   				     }
-   				 }
-				})
-			</script>
-		</div>
-	</div>
-	-->
-  <!-- PROMO -->
   <div class="container-fluid promo">
     <div class="row">
-      <div class="col-lg-4 promo__left">
+      <div class="col-lg-4 col-md-4 promo__left hidden-sm hidden-xs">
         <img src="image/promo/1.png" alt="promo-image" class="promo__image">
       </div>
 
-      <div class="col-lg-8 promo__right">
+      <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 promo__right">
         <div class="promo__overlay">
           <h1 class="promo__title">Lorem ipsum</h1><br>
           <div class="promo__description">
@@ -293,15 +146,168 @@
       </div>
     </div>
   </div>
-  <!-- ./PROMO -->
 
 
-<!--NEWS-->
- <div class="container news">
+
+
+<!-- NEWS -->
+  <div class="container-fluid news">
+    <div class="row">
+      <h4 class="container__title">НОВОСТИ</h4>
+      <span class="news__background-text">Н</span>
+    </div>
+
+    <div class="row dra -flex">
+      <div class="col-lg-2 col-xs-0">
+
+      </div>
+
+      <div class="col-lg-10 col-md-4 col-xs-12 owl-carousel owl-theme news__slider">
+        <div class="item">
+          <div class="news__item">
+            <div class="news__date">
+              <img src="image/news/flags.png" alt="cover" class="date-cover">
+              <span>14</span>
+              <span>июля</span>
+            </div>
+            <div class="news__image">
+              <img src="image/news/1.png" alt="">
+            </div>
+            <div class="news__title">Lorem ipsum</div>
+            <div class="news__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="news__item">
+            <div class="news__date">
+              <img src="image/news/flags.png" alt="cover" class="date-cover">
+              <span>10</span>
+              <span>июля</span>
+            </div>
+            <div class="news__image">
+              <img src="image/news/2.png" alt="">
+            </div>
+            <div class="news__title">Lorem ipsum</div>
+            <div class="news__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="news__item">
+            <div class="news__date">
+              <img src="image/news/flags.png" alt="cover" class="date-cover">
+              <span>9</span>
+              <span>июля</span>
+            </div>
+            <div class="news__image">
+              <img src="image/news/3.png" alt="">
+            </div>
+            <div class="news__title">Lorem ipsum</div>
+            <div class="news__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="news__item">
+            <div class="news__date">
+              <img src="image/news/flags.png" alt="cover" class="date-cover">
+              <span>10</span>
+              <span>июля</span>
+            </div>
+            <div class="news__image">
+              <img src="image/news/1.png" alt="">
+            </div>
+            <div class="news__title">Lorem ipsum</div>
+            <div class="news__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="news__item">
+            <div class="news__date">
+              <img src="image/news/flags.png" alt="cover" class="date-cover">
+              <span>5</span>
+              <span>июля</span>
+            </div>
+            <div class="news__image">
+              <img src="image/news/2.png" alt="">
+            </div>
+            <div class="news__title">Lorem ipsum</div>
+            <div class="news__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="news__item">
+            <div class="news__date">
+              <img src="image/news/flags.png" alt="cover" class="date-cover">
+              <span>8</span>
+              <span>июля</span>
+            </div>
+            <div class="news__image">
+              <img src="image/news/3.png" alt="">
+            </div>
+            <div class="news__title">Lorem ipsum</div>
+            <div class="news__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(".news__slider").owlCarousel({
+    items: 3,
+    autoWidth: false,
+    margin: 60,
+    nav: true,
+    dots: false,
+    responsive : {
+      1700: {
+        items: 3,
+        autoWidth: true
+      },
+      1250: {
+        items: 3
+      },
+      800: {
+        items: 3
+      },
+      425: {
+        items: 2
+      }
+    }
+  });
+    </script>
+  </div>
+  <!-- ./NEWS -->
+
+
+
+
+
+
+
+
+<!--
+ <div class="news container-fluid">
  	<h1 class="news__header">НОВОСТИ</h1>
+   <span class="news__background-text">Н</span>
+  
  	
-	<div class="owl-carousel owl-theme">
- 		<div class="item">
+	<div class="owl-carousel owl-theme news__carusel news__carusel">
+ 		<div class="item -item__news">
  			<div class="news__block">
  				<div class="flag">
  				<img src="image/news/flag.png" alt="flag">
@@ -314,8 +320,21 @@
  				</div>
  			</div>
  		</div>
-		
-		<div class="item">
+		<div class="item -item__news">
+      <div class="news__block">
+        <div class="flag">
+        <img src="image/news/flag1.png" alt="flag">
+        </div>
+      
+        <img src="image/news/2.png" alt="image">
+        <div class="news__text">
+          <h1 class="news__menu__header">Lorem Ipsum</h1>
+          <p class="news__menu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua.</p>
+        </div>
+      </div>
+    </div>  
+
+		<div class="item -item__news">
  			<div class="news__block">
  				<div class="flag">
  				<img src="image/news/flag1.png" alt="flag">
@@ -329,10 +348,10 @@
  			</div>
  		</div>
 
-		<div class="item">
+		<div class="item -item__news">
  			<div class="news__block">
  				<div class="flag">
- 				<img src="image/news/flag2.png" alt="flag">
+ 				<img src="image/news/flags.png" alt="flag">
  				</div>
 			
  				<img src="image/news/3.png" alt="image">
@@ -342,13 +361,56 @@
  				</div>
  			</div>
  		</div>
+    
+    <div class="item -item__news">
+      <div class="news__block">
+        <div class="flag">
+        <img src="image/news/flag.png" alt="flag">
+        </div>
+      
+        <img src="image/news/1.png" alt="image">
+        <div class="news__text">
+          <h1 class="news__menu__header">Lorem Ipsum</h1>
+          <p class="news__menu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua.</p>
+        </div>
+      </div>
+    </div>
+    
+      <div class="item -item__news">
+      <div class="news__block">
+        <div class="flag">
+        <img src="image/news/flag1.png" alt="flag">
+        </div>
+      
+        <img src="image/news/2.png" alt="image">
+        <div class="news__text">
+          <h1 class="news__menu__header">Lorem Ipsum</h1>
+          <p class="news__menu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item -item__news">
+      <div class="news__block">
+        <div class="flag">
+        <img src="image/news/flags.png" alt="flag">
+        </div>
+      
+        <img src="image/news/3.png" alt="image">
+        <div class="news__text">
+          <h1 class="news__menu__header">Lorem Ipsum</h1>
+          <p class="news__menu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua.</p>
+        </div>
+      </div>
+    </div>
+
 	</div>
+
 	<script type="text/javascript">
 				$('.owl-carousel').owlCarousel({
    				 loop:true,
-   				 margin:10,
-   				 responsiveClass:true,
-                 navText: ["&lArr;", "&gt; "],
+           margin:30,
+           navText: ["&lArr;", "&gt; "],
    				 responsive:{
    				     0:{
    				         items:1,
@@ -367,17 +429,364 @@
 				})
 			</script>
  </div>
+ -->
 
 
 
-<!-- REVIEWS -->
-  <div class="container reviews">
+ <!-- NEW_BOOKS -->
+  <div class="container-fluid new-books">
     <div class="row">
-      <h4 class="container__title news__header">ОТЗЫВЫ</h4>
+      <h4 class="container__title">НОВЫЕ ИЗДАНИЯ</h4>
+      <span class="new__background-text -it">К</span>
     </div>
 
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-12 owl-carousel owl-theme new-books__slider">
+        <div class="item">
+          <ul class="new-books__list">
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-1.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-empty.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <ul class="new-books__list">
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-empty.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-4.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <ul class="new-books__list">
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-2.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-5.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <ul class="new-books__list">
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-4.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-6.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <ul class="new-books__list">
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-2.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-4.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <ul class="new-books__list">
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-empty.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-3.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <ul class="new-books__list">
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-1.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-empty.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <ul class="new-books__list">
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-empty.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-4.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <ul class="new-books__list">
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-2.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+
+            <li class="new-books__item">
+              <div class="news__item">
+                <div class="news__image">
+                  <img src="image/new-book/new-book-5.png" alt="">
+                </div>
+                <div class="news__title">Lorem ipsum</div>
+                <div class="news__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolorum.
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+           <script type="text/javascript">   
+      $(".new-books__slider").owlCarousel({
+       items: 4,
+       nav: true,
+       dots: false,
+       autoWidth: true,
+
+  });
+</script>
+    </div>
+  </div>
+  <!-- ./NEW_BOOKS -->
+  
+  <!-- Mobile-->
+  <div class="hidden-lg hidden-md ">
+    <h4 class="container__title -otp">ОТЗЫВЫ</h4>
+<div class="Reviews__mobile -flex -RMC">
+  
+  <div class="owl-carousel owl-theme">
+        <div class="item bop -flex">
+           <div class="reviews__image">
+           <img src="image/Reviers/2.png" alt="book-imgae" class="reviews__book-img">
+        </div>
+        <div class="reviews__description">
+          <blockquote>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                      Amet, numquam itaque suscipit molestias distinctio odio sint at? 
+                      Quam molestiae quidem illo assumenda?
+                      <cite title="Source Title">
+                         <div class="reviews__person">
+                      <img src="image/Reviers/3.png" alt="person-image" class="reviews__person-img">
+                      <div class="person__info">
+                        <a href="#" class="reviews__name">Фамилия Имя Отчество</a>
+                        <span class="reviews__post">Lorem ipsum</span>
+                      </div>
+                    </div>
+                      </cite>
+          </blockquote>
+         </div>
+        </div>
+ 
+        <div class="item bop -flex">
+           <div class="reviews__image">
+           <img src="image/Reviers/4.png" alt="book-imgae" class="reviews__book-img">
+        </div>
+        <div class="reviews__description">
+          <blockquote>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                      Amet, numquam itaque suscipit molestias distinctio odio sint at? 
+                      Quam molestiae quidem illo assumenda?
+                      <cite title="Source Title">
+                         <div class="reviews__person">
+                      <img src="image/Reviers/1.png" alt="person-image" class="reviews__person-img">
+                      <div class="person__info">
+                        <a href="#" class="reviews__name">Фамилия Имя Отчество</a>
+                        <span class="reviews__post">Lorem ipsum</span>
+                      </div>
+                    </div>
+                      </cite>
+          </blockquote>
+         </div>
+        </div>
+  </div>
+  <script type="text/javascript">
+       $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    items:1,
+    autoHeight:true,
+})
+</script>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="news__header hidden-sm hidden-xs hidden-md">
+    <div class="row Revi__rel">
+      <h4 class="container__title ">ОТЗЫВЫ</h4>
+      <span class="new__background-text">O</span>
+    </div>
+
+    <div class="row ">
+      <div class="col-lg-12 _flex">
         <ul class="reviews__list">
           <li class="reviews__item">
             <div class="reviews__review">
@@ -421,12 +830,12 @@
             </div>
           </li>
         </ul>
+
       </div>
     </div>
   </div>
-  <!-- ./REVIEWS -->
 
-<div class="Regestration container">
+<div class="Regestration container-fluid">
 	<h1 class="Regestration__footer -center">Если вы еще не зарегистрировались</h1>
 	<div class="Regestration__button">
 	<button type="button" class="btn btn-primary -btn  -center">
@@ -450,6 +859,7 @@
       </div>
     </div>
   </footer>
+
 
 
 </body>

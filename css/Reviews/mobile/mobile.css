@@ -1,0 +1,57 @@
+.Reviews__mobile .person__info
+{
+	margin-left: 22px;
+}
+.Reviews__mobile .picture
+{
+	display: block;
+
+}
+.-txt
+{
+text-align: center;
+}
+.-RMC
+{
+	 background-image: linear-gradient(-74deg, #c2e9fd 0%, #a1c4fd 100%);
+}
+.Reviews__mobile .reviews__image
+{
+
+	background-image: none !important;
+	
+}
+.-bl
+{
+	display: block;
+}
+.-Dir_flex
+{
+	flex-direction: column;
+}
+.Reviews__mobile .owl-nav
+{
+	visibility: hidden;
+}
+.Reviews__mobile .reviews__book-img
+{
+	width: 160px!important;
+}
+.logo__person
+{
+	width: 100px!important;
+	display:unset!important;
+}
+.Reviews__mobile .owl-carousel .owl-item img
+{
+width: unset;
+}
+.-otp
+{
+	margin-bottom: 80px!important;
+	margin-top: 80px;
+}
+.Reviews__mobile .owl-carousel
+{
+	height: 350px;
+}
