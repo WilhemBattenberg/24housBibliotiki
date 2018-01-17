@@ -1,5 +1,14 @@
 @import "icon-bar/icon.css";
 .collapsed
 {
-	background: Green;
+	background-image:linear-gradient(-124deg, #c2e9fb 0%, #a1c4fd 100%);
+	
+}
+.navbar-toggle
+{
+	margin-top: 25px; 
+}
+.collapse.in
+{
+	margin-top: 20px;
 }

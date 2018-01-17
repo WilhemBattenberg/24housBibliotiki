@@ -5,6 +5,8 @@
 @import "Reviews/Revievers.css";
 @import "Promo/promo.css";
 @import "_media/media.css";
+@import "../modal/jquery.modal.css";
+@import "Window/windows.css";
 .-center
 {
 	text-align: center;
@@ -39,4 +41,25 @@ top: -70px;
 text-align: left;
 margin-left: -50px;
 text-transform: uppercase;
+}
+.bod
+{
+	min-width: 320px;
+}
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:100px;
+    height: 40px;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
 }

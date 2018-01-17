@@ -111,13 +111,84 @@ width: 100%;
 	.promo__description
 	{
 		padding: 10px;
+		margin: 0 auto;
 	}
 	.promo__button 
 	{
-		margin: 7px;
+		margin: 30px;
 	}
 	.promo__title
 	{
 		text-align: center;
+	}
+	
+}
+@media (max-width: 350px)
+{
+	.Regestration__button	.-btn
+	{
+		width: 90%;
+	}
+	.Regestration__text_button
+	{
+		font-size: 15px;
+	}
+	.promo__button 
+	{
+		margin: 5px;
+	}
+
+}
+@media (max-width: 556px)
+{
+	.media_new
+	{
+		border: none;
+	}
+
+}
+@media (min-width: 927px) {
+	.reviews__description
+	{
+		top: 50%;
+		transform: translateY(15%);
+	}
+	
+}
+@media (max-width: 927px) and (min-width: 657px) {
+	.reviews__description
+	{
+		top: 20%;
+		transform: translateY(11%);
+	}
+}
+@media (max-width: 657px)
+{
+	.reviews__description
+	{
+		transform: translateY(8%);
+	}
+	.-otp
+	{
+		margin-left:  0px !important;
+
+	}
+	.container__title
+	{
+		margin-left: 20px!important;
+	}
+}
+@media (min-width: 600px)
+{
+	.person__info
+	{
+		margin-top: 10px!important;
+	}
+}
+@media (max-width: 600px) and (min-width: 346px)
+{
+	.person__info
+	{
+		margin-top: 0px !important;
 	}
 }

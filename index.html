@@ -7,21 +7,24 @@
   <link href="https://fonts.googleapis.com/css?family=Cormorant:400,600&amp;subset=cyrillic" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
-	
+	<script src="modal/jquery.modal.min.js"></script>
+  <script src="modal/jquery.cookie.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="setting.css">
 	
 	
 	<title></title>
 </head>
-<body class="-col">
+<body class="-col bod">
 
 <!-- Mobile menu-->
 <nav class="navbar navbar-default hidden-sm hidden-md hidden-lg">
-  <div class="container-fluid menu_widt">
+  <div class="container-fluid ">
     <!-- Заголовок -->
     <div class="navbar-header ">
       <!-- Кнопка «Гамбургер» -->
@@ -163,7 +166,7 @@
       </div>
 
       <div class="col-lg-10 col-md-4 col-xs-12 owl-carousel owl-theme news__slider">
-        <div class="item">
+        <div class="item" onclick="hs_3()">
           <div class="news__item">
             <div class="news__date">
               <img src="image/news/flags.png" alt="cover" class="date-cover">
@@ -180,7 +183,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" onclick="hs_2()">
           <div class="news__item">
             <div class="news__date">
               <img src="image/news/flags.png" alt="cover" class="date-cover">
@@ -197,7 +200,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" onclick="hs_1()">
           <div class="news__item">
             <div class="news__date">
               <img src="image/news/flags.png" alt="cover" class="date-cover">
@@ -214,11 +217,11 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" onclick="hs_3()">
           <div class="news__item">
             <div class="news__date">
               <img src="image/news/flags.png" alt="cover" class="date-cover">
-              <span>10</span>
+              <span>14</span>
               <span>июля</span>
             </div>
             <div class="news__image">
@@ -231,11 +234,11 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" onclick="hs_2()">
           <div class="news__item">
             <div class="news__date">
               <img src="image/news/flags.png" alt="cover" class="date-cover">
-              <span>5</span>
+              <span>10</span>
               <span>июля</span>
             </div>
             <div class="news__image">
@@ -248,11 +251,11 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" onclick="hs_1()">
           <div class="news__item">
             <div class="news__date">
               <img src="image/news/flags.png" alt="cover" class="date-cover">
-              <span>8</span>
+              <span>9</span>
               <span>июля</span>
             </div>
             <div class="news__image">
@@ -442,7 +445,7 @@
 
     <div class="row">
       <div class="col-lg-12 owl-carousel owl-theme new-books__slider">
-        <div class="item">
+        <div class="item ">
           <ul class="new-books__list">
             <li class="new-books__item">
               <div class="news__item">
@@ -708,7 +711,7 @@
   <!-- ./NEW_BOOKS -->
   
   <!-- Mobile-->
-  <div class="hidden-lg hidden-md ">
+  <div class="hidden-lg  ">
     <h4 class="container__title -otp">ОТЗЫВЫ</h4>
 <div class="Reviews__mobile -flex -RMC">
   
@@ -718,7 +721,7 @@
            <img src="image/Reviers/2.png" alt="book-imgae" class="reviews__book-img">
         </div>
         <div class="reviews__description">
-          <blockquote>
+          <blockquote class="media_new">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                       Amet, numquam itaque suscipit molestias distinctio odio sint at? 
                       Quam molestiae quidem illo assumenda?
@@ -740,7 +743,7 @@
            <img src="image/Reviers/4.png" alt="book-imgae" class="reviews__book-img">
         </div>
         <div class="reviews__description">
-          <blockquote>
+          <blockquote  class="media_new">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                       Amet, numquam itaque suscipit molestias distinctio odio sint at? 
                       Quam molestiae quidem illo assumenda?
@@ -848,11 +851,11 @@
 <footer class="container footer -col">
 		<hr class="Regestration__line">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6 col-xs-6">
         <span class="Regestration__copy_rait">Lorem, ipsum.</span>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-6 col-xs-6">
         <span class="Regestration__copy_rait -right_t">
             <i class="glyphicon glyphicon-copyright-mark"></i> Библиотека24
         </span>
@@ -860,7 +863,58 @@
     </div>
   </footer>
 
+<div id="opn-win_1" class="ls"  style="display:none;">
+  <div class="news">
+    <div class="Date__modal" id="Date__N">9 Июля</div>
+    <div class="image__news__windows">
+       <img src="image/news/3.png">
+    </div>
+    <div class="reviews__description -Modal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Possimus ipsum, sit dolores animi provident culpa iusto aliquid, est vero hic quod totam!
+    </div>
+  </div>
+</div>
 
+<div id="opn-win_2" class="ls"  style="display:none;">
+  <div class="news_block">
+    <div class="Date__modal" id="Date__N">10 Июля</div>
+    <div class="image__news__windows">
+       <img src="image/news/2.png">
+    </div>
+    <div class="reviews__description -Modal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Possimus ipsum, sit dolores animi provident culpa iusto aliquid, est vero hic quod totam!
+    </div>
+  </div>
+</div>
 
+<div id="opn-win_3"  class="ls" style="display:none;">
+  <div class="news_block">
+    <div class="Date__modal" id="Date__N">14 Июля</div>
+    <div class="image__news__windows">
+       <img src="image/news/1.png">
+    </div>
+    <div class="reviews__description -Modal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Possimus ipsum, sit dolores animi provident culpa iusto aliquid, est vero hic quod totam!
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function hs_1()
+  {  
+    $('#opn-win_1').modal();
+};
+  function hs_2()
+  {  
+    $('#opn-win_2').modal();
+};
+  function hs_3()
+  {  
+    $('#opn-win_3').modal();
+};
+</script>
 </body>
 </html>
