@@ -15,11 +15,11 @@
     font-family: "Cormorant Garamond";
     font-weight: 700;
     font-size: 20px;
-    background: #FAB975;
+   background: Whitessmoke;
 }
 .news_block
 {
-	background: #FAB975;
+	background: Whitessmoke;
 	height: 450px;
 }
 .-Modal
@@ -34,15 +34,16 @@
 {
 	bottom: auto;
 	right: auto;
-	 background: #FAB975; 
+	 background: #ccc; 
 	
 }
 @media (max-width: 768px)
 {
 	.ls
 	{
-		margin-left: 0px;
+		margin-right: 10px;
 		top: 50% !important;
+		padding-right: 30px;
 	}
 }
 @media (min-width: 700px)

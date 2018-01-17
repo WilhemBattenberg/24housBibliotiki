@@ -192,3 +192,8 @@
   padding: 0;
   margin-right: -20px!important;
 }
+.owl-carousel.owl-drag .owl-item
+{
+  margin-right: 120px!important;
+  width: 1% !important;
+}
